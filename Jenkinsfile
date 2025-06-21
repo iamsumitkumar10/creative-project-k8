@@ -20,7 +20,7 @@ pipeline{
         stage('deploy deployment'){
             steps{
                 sh 'kubectl apply -f backend-deployment.yaml'
-                sh 'kubectl apply -f frontend-deplyment.yaml'
+                sh 'kubectl apply -f frontend-deployment.yaml'
             }
         }
         stage('services'){
